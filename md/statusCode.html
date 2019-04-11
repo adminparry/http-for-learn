@@ -1,0 +1,414 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>http状态码 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="statusCode.html">
+            
+                <a href="statusCode.html">
+            
+                    
+                    http状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >http状态码</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="http&#x72B6;&#x6001;&#x7801;">http&#x72B6;&#x6001;&#x7801;</h1>
+<p>&#x6700;&#x8FD1;&#x5728;&#x770B;dart &#x4ECE;&#x4E2D;&#x770B;&#x5230;&#x4E86;http&#x72B6;&#x6001;&#x7801; &#x503C;&#x5F97;&#x6536;&#x85CF;&#x548C;&#x5B66;&#x4E60;
+&#x987A;&#x4FBF;&#x641C;&#x7D22;&#x4E86;&#x4E00;&#x4E0B; &#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x53EF;&#x4EE5;&#x770B;<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status" target="_blank">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status</a></p>
+<pre><code class="lang-dart"><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HttpStatus</span> </span>{
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> continue_ = <span class="hljs-number">100</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> switchingProtocols = <span class="hljs-number">101</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> processing = <span class="hljs-number">102</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> ok = <span class="hljs-number">200</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> created = <span class="hljs-number">201</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> accepted = <span class="hljs-number">202</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> nonAuthoritativeInformation = <span class="hljs-number">203</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> noContent = <span class="hljs-number">204</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> resetContent = <span class="hljs-number">205</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> partialContent = <span class="hljs-number">206</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> multiStatus = <span class="hljs-number">207</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> alreadyReported = <span class="hljs-number">208</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> imUsed = <span class="hljs-number">226</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> multipleChoices = <span class="hljs-number">300</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> movedPermanently = <span class="hljs-number">301</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> found = <span class="hljs-number">302</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> movedTemporarily = <span class="hljs-number">302</span>; <span class="hljs-comment">// Common alias for found.</span>
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> seeOther = <span class="hljs-number">303</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> notModified = <span class="hljs-number">304</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> useProxy = <span class="hljs-number">305</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> temporaryRedirect = <span class="hljs-number">307</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> permanentRedirect = <span class="hljs-number">308</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> badRequest = <span class="hljs-number">400</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> unauthorized = <span class="hljs-number">401</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> paymentRequired = <span class="hljs-number">402</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> forbidden = <span class="hljs-number">403</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> notFound = <span class="hljs-number">404</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> methodNotAllowed = <span class="hljs-number">405</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> notAcceptable = <span class="hljs-number">406</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> proxyAuthenticationRequired = <span class="hljs-number">407</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> requestTimeout = <span class="hljs-number">408</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> conflict = <span class="hljs-number">409</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> gone = <span class="hljs-number">410</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> lengthRequired = <span class="hljs-number">411</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> preconditionFailed = <span class="hljs-number">412</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> requestEntityTooLarge = <span class="hljs-number">413</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> requestUriTooLong = <span class="hljs-number">414</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> unsupportedMediaType = <span class="hljs-number">415</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> requestedRangeNotSatisfiable = <span class="hljs-number">416</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> expectationFailed = <span class="hljs-number">417</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> misdirectedRequest = <span class="hljs-number">421</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> unprocessableEntity = <span class="hljs-number">422</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> locked = <span class="hljs-number">423</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> failedDependency = <span class="hljs-number">424</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> upgradeRequired = <span class="hljs-number">426</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> preconditionRequired = <span class="hljs-number">428</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> tooManyRequests = <span class="hljs-number">429</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> requestHeaderFieldsTooLarge = <span class="hljs-number">431</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> connectionClosedWithoutResponse = <span class="hljs-number">444</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> unavailableForLegalReasons = <span class="hljs-number">451</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> clientClosedRequest = <span class="hljs-number">499</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> internalServerError = <span class="hljs-number">500</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> notImplemented = <span class="hljs-number">501</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> badGateway = <span class="hljs-number">502</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> serviceUnavailable = <span class="hljs-number">503</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> gatewayTimeout = <span class="hljs-number">504</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> httpVersionNotSupported = <span class="hljs-number">505</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> variantAlsoNegotiates = <span class="hljs-number">506</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> insufficientStorage = <span class="hljs-number">507</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> loopDetected = <span class="hljs-number">508</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> notExtended = <span class="hljs-number">510</span>;
+  <span class="hljs-meta">@Since</span>(<span class="hljs-string">&quot;2.1&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> networkAuthenticationRequired = <span class="hljs-number">511</span>;
+  <span class="hljs-comment">// Client generated status code.</span>
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> networkConnectTimeoutError = <span class="hljs-number">599</span>;
+
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use continue_ instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> CONTINUE = continue_;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use switchingProtocols instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> SWITCHING_PROTOCOLS = switchingProtocols;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use ok instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> OK = ok;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use created instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> CREATED = created;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use accepted instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> ACCEPTED = accepted;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use nonAuthoritativeInformation instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> NON_AUTHORITATIVE_INFORMATION = nonAuthoritativeInformation;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use noContent instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> NO_CONTENT = noContent;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use resetContent instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> RESET_CONTENT = resetContent;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use partialContent instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> PARTIAL_CONTENT = partialContent;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use multipleChoices instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> MULTIPLE_CHOICES = multipleChoices;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use movedPermanently instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> MOVED_PERMANENTLY = movedPermanently;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use found instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> FOUND = found;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use movedTemporarily instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> MOVED_TEMPORARILY = movedTemporarily;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use seeOther instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> SEE_OTHER = seeOther;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use notModified instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> NOT_MODIFIED = notModified;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use useProxy instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> USE_PROXY = useProxy;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use temporaryRedirect instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> TEMPORARY_REDIRECT = temporaryRedirect;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use badRequest instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> BAD_REQUEST = badRequest;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use unauthorized instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> UNAUTHORIZED = unauthorized;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use paymentRequired instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> PAYMENT_REQUIRED = paymentRequired;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use forbidden instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> FORBIDDEN = forbidden;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use notFound instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> NOT_FOUND = notFound;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use methodNotAllowed instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> METHOD_NOT_ALLOWED = methodNotAllowed;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use notAcceptable instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> NOT_ACCEPTABLE = notAcceptable;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use proxyAuthenticationRequired instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> PROXY_AUTHENTICATION_REQUIRED = proxyAuthenticationRequired;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use requestTimeout instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> REQUEST_TIMEOUT = requestTimeout;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use conflict instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> CONFLICT = conflict;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use gone instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> GONE = gone;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use lengthRequired instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> LENGTH_REQUIRED = lengthRequired;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use preconditionFailed instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> PRECONDITION_FAILED = preconditionFailed;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use requestEntityTooLarge instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> REQUEST_ENTITY_TOO_LARGE = requestEntityTooLarge;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use requestUriTooLong instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> REQUEST_URI_TOO_LONG = requestUriTooLong;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use unsupportedMediaType instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> UNSUPPORTED_MEDIA_TYPE = unsupportedMediaType;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use requestedRangeNotSatisfiable instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> REQUESTED_RANGE_NOT_SATISFIABLE =
+      requestedRangeNotSatisfiable;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use expectationFailed instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> EXPECTATION_FAILED = expectationFailed;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use upgradeRequired instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> UPGRADE_REQUIRED = upgradeRequired;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use internalServerError instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> INTERNAL_SERVER_ERROR = internalServerError;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use notImplemented instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> NOT_IMPLEMENTED = notImplemented;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use badGateway instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> BAD_GATEWAY = badGateway;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use serviceUnavailable instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> SERVICE_UNAVAILABLE = serviceUnavailable;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use gatewayTimeout instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> GATEWAY_TIMEOUT = gatewayTimeout;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use httpVersionNotSupported instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> HTTP_VERSION_NOT_SUPPORTED = httpVersionNotSupported;
+  <span class="hljs-meta">@Deprecated</span>(<span class="hljs-string">&quot;Use networkConnectTimeoutError instead&quot;</span>)
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-built_in">int</span> NETWORK_CONNECT_TIMEOUT_ERROR = networkConnectTimeoutError;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"http状态码","level":"1.2","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"md/statusCode.md","mtime":"2019-04-11T05:49:41.637Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-11T05:51:32.994Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
